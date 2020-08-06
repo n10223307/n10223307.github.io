@@ -1,11 +1,19 @@
-<script src="https://smtpjs.com/v3/smtp.js">
-</script>
-Email.send({
-    Host : "msa.hinet.net",
-    To : '520allen@gmail.com',
-    From : "you@isp.com",
-    Subject : "This is the subject",
-    Body : "And this is the body"
-}).then(
-  message => alert(message)
-);
+<!-- modify this form HTML and place wherever you want your form -->
+
+<form
+  action="https://formspree.io/mwkryjqp"
+  method="POST"
+>
+  <label>
+    Your email:
+    <input type="text" name="_replyto">
+  </label>
+  <label>
+    Your message:
+    <textarea name="message"></textarea>
+  </label>
+
+  <!-- your other form fields go here -->
+
+  <button type="submit">Send</button>
+</form>
